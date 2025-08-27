@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBU - The good, the bad, and the ugly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Don't judge yourself - get it all out and admit it to yourself</h1>
+    </header>
+    
+    <textarea id="secretes" placeholder="Write your heart out or whatever here..."></textarea>
+    <button id="saveBtn" onclick="resetBox()">I'm admiting this</button>
+    <label class="switch" >
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <div class="savedThought">
+        <h2>Saved Thoughts</h2>
+        <div id="thoughtsContainer">
+            <!-- Saved thoughts will appear here -->
+             <p><i>This is still in progress so stay with me :)</i></p>
+        </div>
+    </div>
+    <script>
+        function resetBox(){
+            document.getElementById("secretes").value = "";
+        }
+    </script>
+</body>
+</html>
