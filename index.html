@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GBU - The good, the bad, and the ugly</title>
+    <title>GBU - The good, bad, and ugly</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="pics/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon_16x16.png">
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="pics/apple-touch-icon.png">
 </head>
 <body>
+    <div class="barContainer" onclick="barChange(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
     <header>
         <h1>Don't judge yourself - get it all out and admit it to yourself</h1>
     </header>
-    
     <textarea id="secretes" placeholder="Write your heart out or whatever here..."></textarea>
     <button id="saveBtn" onclick="resetBox()">I'm admiting this</button>
     <label class="switch" >
@@ -29,6 +34,10 @@
     <script>
         function resetBox(){
             document.getElementById("secretes").value = "";
+        }
+
+        function barChange(x) {
+            x.classList.toggle("change");
         }
     </script>
 </body>
